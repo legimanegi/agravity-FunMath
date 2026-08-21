@@ -31,7 +31,7 @@ export const MiniLeaderboard: React.FC<MiniLeaderboardProps> = ({ records }) => 
     <div className="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-3 shadow-sm">
       <div className="flex items-center gap-2 mb-3 px-1">
         <Trophy className="w-4 h-4 text-amber-500" />
-        <h3 className="text-sm font-bold text-slate-800 dark:text-slate-200 uppercase tracking-wider">Top 3 Global</h3>
+        <h3 className="text-sm font-bold text-slate-800 dark:text-slate-200 uppercase tracking-wider">Top 3 Achiever</h3>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
