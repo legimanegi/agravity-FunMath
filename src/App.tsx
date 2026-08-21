@@ -7,6 +7,7 @@ import { MathGrid } from './components/MathGrid';
 import { TimerDisplay } from './components/TimerDisplay';
 import { ResultModal } from './components/ResultModal';
 import { LeaderboardModal } from './components/LeaderboardModal';
+import { MiniLeaderboard } from './components/MiniLeaderboard';
 
 // Web Audio API helper for sound effects without external MP3 dependencies
 const playBeepSound = (freq = 600, duration = 0.1, type: OscillatorType = 'sine') => {
@@ -283,6 +284,9 @@ export function App() {
       {/* Main Container */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
         
+        {/* Top 3 Global Highlight */}
+        <MiniLeaderboard records={userRecordsMap} />
+
         {/* Practice Config Panel */}
         <ConfigPanel
           config={config}
